@@ -48,7 +48,7 @@ python3 solve.py
 ```
 
 The [src/SimAnn.py](src/SimAnn.py) file contains the functions to run the Simulated Annealing to sample from the Boltzmann distribution using the Metropolis-Hastings rule.
-The constructor of the `Sudoku` class, defined in [src/Sudoku.py](src/Sudoku.py), accepts either an integer number or another Sudoku object as an argument. If the constructor gets a number, it initializes a sudoku table of size equal to the number. If instead it receives a Sudoku object, it chooses at random a fraction of the entries to keep fixed (defined by the argument `r`), and shuffles the rest.
+The constructor of the `Sudoku` class, defined in [src/Sudoku.py](src/Sudoku.py), accepts either an integer number or another Sudoku object as an argument. If the constructor gets a number, it initializes a sudoku table of size equal to the number. If instead it receives a `Sudoku` object, it chooses at random a fraction of the entries to keep fixed (defined by the argument `r`), and shuffles the rest.
 In the [solve.py](solve.py) script, a valid sudoku table is first generated and filled up. Then, a sudoku problem to be solved is created from this valid sudoku table. Finally, the sudoku problem is solved.
 
 ## References
